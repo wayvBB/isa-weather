@@ -102,13 +102,8 @@ function getTemperatureCondition(temp, unit) {
     }
 }
 
-// Window load event - default to Cagayan de Oro
-window.onload = function () {
-    getWeather(DEFAULT_LAT, DEFAULT_LON, "metric", DEFAULT_CITY);
-};
-
-// Search functionality
-document.querySelector(".search-button").addEventListener("click", function() {
+// Function to perform search
+function performSearch() {
     const searchInput = document.querySelector(".search-bar");
     const cityName = searchInput.value.trim();
 
@@ -123,6 +118,23 @@ document.querySelector(".search-button").addEventListener("click", function() {
                 console.log(error);
                 document.getElementById("location-text").textContent = `📍 City not found`;
             });
+    }
+}
+
+// Window load event - default to Cagayan de Oro
+window.onload = function () {
+    getWeather(DEFAULT_LAT, DEFAULT_LON, "metric", DEFAULT_CITY);
+};
+
+// Search button click event
+document.querySelector(".search-button").addEventListener("click", performSearch);
+
+// Search input enter key event
+document.querySelector(".search-bar").addEventListener("keypress", function(event) {
+    // Check if the pressed key is Enter (key code 13)
+    if (event.key === "Enter") {
+        event.preventDefault(); // Prevent default form submission
+        performSearch();
     }
 });
 
