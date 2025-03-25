@@ -47,6 +47,7 @@
 .search-bar {
     background-color: rgba(255, 255, 255, 0.8);
     border: 3px solid #5444a5; 
+    display: block;
     border-radius: 25px; 
     font-family: "Pixelify Sans", sans-serif;
     font-size: 1em;
@@ -70,7 +71,7 @@
     width: 50px;
     border-radius: 50%;
     cursor: pointer;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
@@ -102,7 +103,7 @@
 
 #location-text {
     display: block;
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: bold;
     color: whitesmoke;
     position: absolute;
@@ -115,6 +116,7 @@
     z-index: 10;
     position: absolute;
     pointer-events: none;
+    display: block;
 }
 
 #center-star {
@@ -249,6 +251,5 @@
     display: flex;
     background-color: aqua;
 }
-
 
 
