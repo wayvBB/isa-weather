@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Isa Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="mainpage">
+    <!--<h1>Welcome</h1>-->
+
+    <div class="container">
+        <div class="toppers">
+            <input type="text" class="search-bar" placeholder="Search for a location...">
+            <button class="search-button">🔍</button>
+        </div>
+
+        <div class="location">
+            <div id="location-text">Loading Location...</div>
+        </div>
+
+        <div class="stars">
+            <img id="star1" src="img/1.png">
+            <img id="star2" src="img/2.png">
+            <img id="center-star" src="img/center.png">
+            <img id="star3" src="img/3.png">    
+            <!--<img id="star4" src="img/4.png">-->
+        </div>
+
+        <div class="weather-card">
+
+            <div class="temperature-section">
+                <div class="temp-section">Temp</div>
+                <div class="unit-buttons">
+                    <div class="unit-btn">°C</div>
+                    <div class="unit-btn">°F</div>
+                </div>
+            </div>
+
+            <div class="description-section">
+                <div class="desc-box">Description</div>
+                <!--<img class="weather-icon" src="">-->
+            </div>
+
+            <div class="image-container">
+                <img class="character-image" src="img/cute.png">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="homepage.js"></script>
+</body>
+</html>

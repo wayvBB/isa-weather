@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Consolas', monospace;
+}
+
+.mainpage {
+    background-image: url("img/weatherBg.gif");
+    position: relative;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    top: 100px;
+    width: 100%;
+}
+
+.header h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 2.3em;
+}
+
+.toppers {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    top: -1vh;
+    padding: 15px 20px;
+    gap: 10px;
+}
+
+.search-bar {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px solid #5444a5; 
+    border-radius: 25px; 
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1em;
+    outline: none;
+    height: 50px;
+    width: 30vh;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #ff82a2; 
+    box-shadow: 0 0 10px rgba(255, 130, 162, 0.3); 
+}
+
+
+.search-button {
+    background-color: #5444a5; 
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 1.2em;
+}
+
+.search-button:hover {
+    background-color: rgba(255, 255, 255, 0.8); 
+    transform: scale(1.05); 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -4vh;
+    width: 50%;
+}
+
+#location-text {
+    display: block;
+    font-size: 2.6em;
+    font-weight: bold;
+    color: whitesmoke;
+    position: absolute;
+    text-align: right;
+    top: 15vh;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.stars {
+    z-index: 10;
+    position: fixed;
+    display: block;
+}
+
+#center-star {
+    display: block;
+    position: relative;
+    top: -210px;
+    right: 155px;
+    size: 0 auto;
+    max-width: 90%;
+}
+
+#star3 {
+    display: block;
+    position: relative;
+    top: -333px;
+    right: 63px;
+}
+
+#star4 {
+    display: block;
+    position: relative;
+    top: -525px;
+    right: -40px;
+}
+
+#star2 {
+    display: block;
+    position: relative;
+    top: -43px;
+    right: 184px;
+}
+
+#star1 {
+    display: block;
+    position: relative;
+    top: 95px;
+    right: 170px;
+}
+
+.weather-card {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: 60vh;
+    width: 50vh;
+    background-color: #f4f7e6;
+    border: 15px solid #34293e; 
+    border-radius: 15px;
+}
+
+.temperature-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 15px solid #34293e;
+    top: 20px;
+}
+
+.temp-section {
+    color: #5444a5;
+    font-size: 2.6em;
+    display: flex;
+    gap: 50px;
+    font-weight: bold;
+}
+
+.unit-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.unit-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #5444a5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.unit-btn:hover {
+    background-color: #ff82a2;
+}
+
+.description-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.desc-box {
+    align-items: center;
+    justify-content: center;
+    background-color: #feb9d8;
+    text-align: center;
+    color: #554388;
+    font-size: 1.5em;
+    border-radius: 10px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    width: 100%;
+    height: 250px;
+}
+
+.character-image {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    size: 0 auto;
+    max-width: 90%;
+    margin-bottom: 30px;
+}
+
+.weatherContent {
+    display: flex;
+    background-color: aqua;
+}
+
+
+
