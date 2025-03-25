@@ -113,8 +113,8 @@
 
 .stars {
     z-index: 10;
-    position: fixed;
-    display: block;
+    position: absolute;
+    pointer-events: none;
 }
 
 #center-star {
